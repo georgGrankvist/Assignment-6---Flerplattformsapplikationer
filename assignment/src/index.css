@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#movies > li {
+  list-style: none;
+  background-color: #eee;
+  margin: 5px;
+  padding: 20px;
+  box-shadow: 0 0 5px #999;
+}
+
+#movies > li > img {
+  float: right;
+  height: 25px;
+  margin-left: 5px;
+}
+
+.delete-movie-icon {
+  cursor: pointer;
+}

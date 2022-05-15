@@ -25,7 +25,6 @@ class RenderInputForm extends Component {
      createMovie(this.state.rating, this.state.title)
      this.state.rating = 0; 
      this.state.title = "";
-     ReactDOM.findDOMNode(this.refs.form).value = "";
    }
 
    console.log(this.state.title)
@@ -39,7 +38,7 @@ class RenderInputForm extends Component {
    <Form >
     <Form.Group className="mb-3">
       <Form.Label>Titel:</Form.Label>
-      <Form.Control ref={"form"} placeholder="Titel här.." 
+      <Form.Control placeholder="Titel här.." 
           onChange={e => this.setState({ title: e.target.value })}/>
     </Form.Group>
   
