@@ -1,7 +1,6 @@
 import './App.css';
 import { Stack } from 'react-bootstrap';
 import RenderInputForm from './components/RenderInputForm.js'
-import MovieList from './components/MovieList';
 
 
 function App() {

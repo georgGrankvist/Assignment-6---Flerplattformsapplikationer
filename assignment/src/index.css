@@ -20,12 +20,15 @@ code {
   box-shadow: 0 0 5px #999;
 }
 
-#movies > li > img {
+#movies > li > div > img {
   float: right;
   height: 25px;
   margin-left: 5px;
 }
 
 .delete-movie-icon {
+  float: right;
+  height: 25px;
+  margin-left: 5px;
   cursor: pointer;
 }
