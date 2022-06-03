@@ -18,7 +18,6 @@ export function RenderInputForm () {
 
 function onClickAlphaBetically () {
     var stores_li = document.querySelectorAll('#movie-list-item');
-    console.log(stores_li);
 
     [].slice.call(stores_li).sort(function(a, b) {
         var textA = a.getAttribute('data-title').toLowerCase()
@@ -65,10 +64,6 @@ function onClickAlphaBetically () {
 
   }
 
-  function deleteItem(id) {
-    setTitle(movies.filter((item) => item.id !== id));
-  }
-
    return (
    <div style= {{width:750}}>
    <Form onSubmit={addMovie}>
@@ -98,7 +93,7 @@ function onClickAlphaBetically () {
    <div style={{width:750}}>
             <h2 className="mt-3">Inlagda Filmer</h2>
             <ul id='movies' className="list-group"> 
-            {movies.map(movie => <Movie key={movie.id} item={movie} deleteItem={deleteItem} />)} </ul>
+            {movies.map(movie => <Movie key={movie.id} item={movie} />)} </ul>
             <button id="button1" onClick = {onClickAlphaBetically} class="btn btn-primary mr-2">Alfabetisk ordning</button>
             <button id="button2" onClick = {onClickNumerically} class="btn btn-primary mr-2">Betygsordning</button>
         </div>
